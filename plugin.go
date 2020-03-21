@@ -1,20 +1,20 @@
 package main
 
 import (
+	"github.com/QuestScreen/PluginTemplate/generated"
 	"github.com/QuestScreen/PluginTemplate/moduletemplate"
-	"github.com/QuestScreen/QuestScreen/generated"
 	"github.com/QuestScreen/api"
 )
 
 // QSPlugin is the plugin's descriptor.
 var QSPlugin = api.Plugin{
-	Name: "<TODO: enter name>",
+	Name: "My Plugin", // TODO: change
 	Modules: []*api.Module{
 		&moduletemplate.Descriptor,
 		// TODO: add modules here
 	},
-	AdditionalJS:    generated.MustAsset("web/js/base.js"),
-	AdditionalHTML:  generated.MustAsset("web/html/base.html"),
+	AdditionalJS:    generated.MustAsset("web/js/myplugin.js"),
+	AdditionalHTML:  generated.MustAsset("web/html/myplugin.html"),
 	AdditionalCSS:   nil,
 	SystemTemplates: nil,
 	GroupTemplates: []api.GroupTemplate{

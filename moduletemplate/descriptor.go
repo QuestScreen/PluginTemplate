@@ -4,8 +4,8 @@ import "github.com/QuestScreen/api"
 
 // Descriptor describes this module.
 var Descriptor = api.Module{
-	Name:                "<TODO: enter name>",
-	ID:                  "<TODO: enter unique id>",
+	Name:                "My Module",         // TODO: change
+	ID:                  "myplugin-mymodule", // TODO: change
 	ResourceCollections: []api.ResourceSelector{
 		// TODO: put resource selectors here if you want the module load files
 		//       from the file system.

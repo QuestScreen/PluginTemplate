@@ -1,6 +1,6 @@
 // TODO: change myplugin & mymodule
 tmpl.myplugin = {
-  mymodule = {
+  mymodule: {
     state: new Template("#tmpl-myplugin-mymodule-state",
         function (state, ctrl) {
       // TODO: render current state into the template.
@@ -11,7 +11,7 @@ tmpl.myplugin = {
 // TODO: change name
 class MyModule {
   constructor() {
-    // TODO: change id
+    // TODO: change id; this must match the Id given in the module's descriptor
     this.id = "myplugin-mymodule";
   }
 
