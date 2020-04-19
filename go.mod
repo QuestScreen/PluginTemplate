@@ -1,4 +1,4 @@
-module github.com/QuestScreen/PluginTemplate
+module github.com/QuestScreen/plugin-template
 
 go 1.12
 

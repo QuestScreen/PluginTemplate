@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/QuestScreen/PluginTemplate/generated"
-	"github.com/QuestScreen/PluginTemplate/moduletemplate"
+	"github.com/QuestScreen/plugin-template/generated"
+	"github.com/QuestScreen/plugin-template/moduletemplate"
 	"github.com/QuestScreen/api"
 )
 
@@ -13,8 +13,8 @@ var QSPlugin = api.Plugin{
 		&moduletemplate.Descriptor,
 		// TODO: add modules here
 	},
-	AdditionalJS:    generated.MustAsset("web/js/myplugin.js"),
-	AdditionalHTML:  generated.MustAsset("web/html/myplugin.html"),
+	AdditionalJS:    generated.MustAsset("web/js/controllers.js"),
+	AdditionalHTML:  generated.MustAsset("web/html/templates.html"),
 	AdditionalCSS:   nil,
 	SystemTemplates: nil,
 	GroupTemplates: []api.GroupTemplate{
