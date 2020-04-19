@@ -57,8 +57,8 @@ func (r *Renderer) Render(ctx api.RenderContext) {
 	// TODO: implement
 }
 
-// RebuildState rebuilds the state from the given data.
-func (r *Renderer) RebuildState(
-	ctx api.ExtendedRenderContext, data interface{}) {
+// Rebuild rebuilds the state from the given config and optionally data.
+func (r *Renderer) Rebuild(
+	ctx api.ExtendedRenderContext, data interface{}, configVal interface{}) {
 	// TODO: implement
 }
