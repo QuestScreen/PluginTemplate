@@ -34,6 +34,12 @@ func (r *Renderer) SetConfig(value interface{}) {
 	r.config = value.(*config)
 }
 
+// Rebuild rebuilds the state from the given config and optionally data.
+func (r *Renderer) Rebuild(
+	ctx api.ExtendedRenderContext, data interface{}, configVal interface{}) {
+	// TODO: implement
+}
+
 // InitTransition starts transitioning after user input changed the state.
 func (r *Renderer) InitTransition(
 	ctx api.RenderContext, data interface{}) time.Duration {
@@ -54,11 +60,5 @@ func (r *Renderer) FinishTransition(ctx api.RenderContext) {
 
 // Render renders the current state / animation frame.
 func (r *Renderer) Render(ctx api.RenderContext) {
-	// TODO: implement
-}
-
-// RebuildState rebuilds the state from the given data.
-func (r *Renderer) RebuildState(
-	ctx api.ExtendedRenderContext, data interface{}) {
 	// TODO: implement
 }
