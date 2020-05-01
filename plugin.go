@@ -13,43 +13,31 @@ var QSPlugin = api.Plugin{
 		&moduletemplate.Descriptor,
 		// TODO: add modules here
 	},
-	AdditionalJS:    generated.MustAsset("web/js/myplugin.js"),
-	AdditionalHTML:  generated.MustAsset("web/html/myplugin.html"),
-	AdditionalCSS:   nil,
-	SystemTemplates: nil,
-	GroupTemplates: []api.GroupTemplate{
+	AdditionalJS:   generated.MustAsset("web/js/myplugin.js"),
+	AdditionalHTML: generated.MustAsset("web/html/myplugin.html"),
+	AdditionalCSS:  nil,
+	SystemTemplates: []api.SystemTemplate{
+		// TODO: add proper system templates here or delete this.
 		{
-			Name: "Minimal", Description: "Contains a „Main“ scene with no modules.",
-			Config: []byte("name: Minimal"),
+			Name: "MySystem", ID: "myplugin-mysystem",
+			Config: []byte("name: MySystem"),
+		},
+	},
+	GroupTemplates: []api.GroupTemplate{
+		// TODO: add proper group templates here or delete this.
+		{
+			Name: "MyTemplate", Description: "Contains a „Main“ scene with no modules.",
+			Config: []byte("name: MyTemplate"),
 			Scenes: []api.SceneTmplRef{
 				{Name: "Main", TmplIndex: 0},
-			},
-		}, {
-			Name:        "Base",
-			Description: "Contains a „Main“ scene with base modules.",
-			Config:      []byte("name: Base"),
-			Scenes: []api.SceneTmplRef{
-				{Name: "Main", TmplIndex: 1},
 			},
 		},
 	},
 	SceneTemplates: []api.SceneTemplate{
+		// TODO: add proper scene templates here or delete this.
 		{
 			Name: "Empty", Description: "A scene with no modules.",
 			Config: []byte("name: Empty"),
-		}, {
-			Name:        "BaseMain",
-			Description: "A scene with background, title, herolist and overlay enabled.",
-			Config: []byte(`name: BaseMain
-modules:
-  background:
-    enabled: true
-  herolist:
-    enabled: true
-  overlays:
-    enabled: true
-  title:
-    enabled: true`),
 		},
 	},
 }
